@@ -1,0 +1,95 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            df:ff:32:33:79:58:64:b9:e0:14:ad:65:7d:2f:49:26
+    Signature Algorithm: sha256WithRSAEncryption
+        Issuer: C=CN, ST=Zhejiang, L=HangZhou, O=opsbase.cn, OU=Organizational Unit, CN=Easy-RSA CA/emailAddress=admin@attacker.club
+        Validity
+            Not Before: Oct 11 19:07:08 2020 GMT
+            Not After : Oct  9 19:07:08 2030 GMT
+        Subject: C=CN, ST=Zhejiang, L=HangZhou, O=opsbase.cn, OU=Organizational Unit, CN=server/emailAddress=admin@attacker.club
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (2048 bit)
+                Modulus:
+                    00:ab:f4:84:ab:ad:0d:5e:94:65:26:88:48:ad:7b:
+                    fe:cc:1e:f3:8e:c7:55:f2:22:2b:61:a7:d0:90:cd:
+                    fb:94:1c:ec:95:7b:ab:19:1d:4f:17:07:ee:44:f4:
+                    bc:99:a2:2b:6a:b9:9c:a2:0c:26:ee:0f:20:8d:57:
+                    50:a2:9a:56:ff:e5:fe:61:65:94:9e:38:49:bc:b2:
+                    dd:17:e7:4d:63:1a:4d:60:52:7f:2b:8b:03:b8:80:
+                    e6:a0:02:e8:05:28:89:3b:e7:e4:f1:25:f2:0a:ed:
+                    0b:08:3a:a1:e2:69:79:00:a7:6a:0a:f7:ef:f8:1b:
+                    72:08:82:a8:1e:71:6d:af:1a:60:29:8c:c6:fb:16:
+                    ad:89:e0:e1:ae:92:f6:bc:6c:70:55:62:d8:8c:d9:
+                    de:e7:b9:66:26:39:42:e8:1e:23:3e:4e:86:63:f2:
+                    1d:00:21:45:49:49:44:22:4b:a1:e2:0c:41:0c:48:
+                    bd:41:27:24:1b:25:90:5d:60:e3:bf:32:89:95:86:
+                    e1:7a:36:d7:e1:c8:a6:dc:2c:b4:7c:cd:f3:f1:74:
+                    24:99:e2:61:3f:84:7b:af:13:17:8a:20:d5:28:f3:
+                    5b:18:6b:37:3a:9e:bb:ea:6b:2a:59:f9:d5:c3:18:
+                    1b:43:f2:b6:f3:6c:c1:88:06:84:cd:b9:fe:4d:15:
+                    91:2f
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Basic Constraints: 
+                CA:FALSE
+            X509v3 Subject Key Identifier: 
+                97:77:62:32:8A:B9:6A:0A:34:1E:2D:2B:02:D5:75:5F:9D:6C:79:16
+            X509v3 Authority Key Identifier: 
+                keyid:4E:59:7A:A4:1E:99:29:9F:DF:55:FE:C4:DD:FE:59:A3:BF:DA:E9:8B
+                DirName:/C=CN/ST=Zhejiang/L=HangZhou/O=opsbase.cn/OU=Organizational Unit/CN=Easy-RSA CA/emailAddress=admin@attacker.club
+                serial:AE:C9:39:F6:C1:7D:6E:0B
+
+            X509v3 Extended Key Usage: 
+                TLS Web Server Authentication
+            X509v3 Key Usage: 
+                Digital Signature, Key Encipherment
+            X509v3 Subject Alternative Name: 
+                DNS:server
+    Signature Algorithm: sha256WithRSAEncryption
+         b4:c0:1f:36:47:61:87:75:f4:79:bc:53:bb:90:0b:3b:d8:60:
+         24:50:5c:8c:21:b5:4e:7e:8e:e0:bd:48:86:57:dc:d2:c8:42:
+         30:23:74:e7:2f:f4:d5:08:c2:24:eb:77:01:1c:60:01:d7:6f:
+         10:5f:5f:bc:a8:b3:7c:55:48:0f:f8:87:a0:ae:2d:8c:9e:58:
+         fc:c8:31:70:cc:c4:b7:2e:d5:6f:58:f6:ab:72:a3:1b:d2:ab:
+         0c:b3:b4:71:87:d2:62:9b:0f:c0:94:3d:89:9a:ff:d4:1e:6c:
+         45:61:79:84:e5:47:a4:83:25:5d:a6:eb:8c:85:c0:a6:bd:44:
+         1d:6a:4f:75:04:48:00:df:43:60:c2:66:5d:4a:3a:15:d8:3d:
+         7a:5d:10:b3:52:49:16:39:52:8d:33:c6:a3:6b:87:af:05:04:
+         db:21:01:66:19:73:e2:9f:2c:ea:ae:27:47:a9:49:e2:87:85:
+         d3:3f:89:47:69:ab:b2:84:f9:8d:e4:54:a2:c2:00:95:91:45:
+         4c:3a:f3:b3:5f:ad:8a:3e:bc:4e:1e:f7:7a:ff:af:21:4d:53:
+         61:e6:cb:90:2c:02:b9:37:cb:be:95:c4:dc:21:9c:c7:a7:3f:
+         bb:7b:5d:56:84:a7:75:f3:ba:a2:75:21:82:06:17:dd:39:96:
+         44:cb:27:75
+-----BEGIN CERTIFICATE-----
+MIIFBTCCA+2gAwIBAgIRAN//MjN5WGS54BStZX0vSSYwDQYJKoZIhvcNAQELBQAw
+gaAxCzAJBgNVBAYTAkNOMREwDwYDVQQIDAhaaGVqaWFuZzERMA8GA1UEBwwISGFu
+Z1pob3UxEzARBgNVBAoMCm9wc2Jhc2UuY24xHDAaBgNVBAsME09yZ2FuaXphdGlv
+bmFsIFVuaXQxFDASBgNVBAMMC0Vhc3ktUlNBIENBMSIwIAYJKoZIhvcNAQkBFhNh
+ZG1pbkBhdHRhY2tlci5jbHViMB4XDTIwMTAxMTE5MDcwOFoXDTMwMTAwOTE5MDcw
+OFowgZsxCzAJBgNVBAYTAkNOMREwDwYDVQQIDAhaaGVqaWFuZzERMA8GA1UEBwwI
+SGFuZ1pob3UxEzARBgNVBAoMCm9wc2Jhc2UuY24xHDAaBgNVBAsME09yZ2FuaXph
+dGlvbmFsIFVuaXQxDzANBgNVBAMMBnNlcnZlcjEiMCAGCSqGSIb3DQEJARYTYWRt
+aW5AYXR0YWNrZXIuY2x1YjCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEB
+AKv0hKutDV6UZSaISK17/swe847HVfIiK2Gn0JDN+5Qc7JV7qxkdTxcH7kT0vJmi
+K2q5nKIMJu4PII1XUKKaVv/l/mFllJ44Sbyy3RfnTWMaTWBSfyuLA7iA5qAC6AUo
+iTvn5PEl8grtCwg6oeJpeQCnagr37/gbcgiCqB5xba8aYCmMxvsWrYng4a6S9rxs
+cFVi2IzZ3ue5ZiY5QugeIz5OhmPyHQAhRUlJRCJLoeIMQQxIvUEnJBslkF1g478y
+iZWG4Xo21+HIptwstHzN8/F0JJniYT+Ee68TF4og1SjzWxhrNzqeu+prKln51cMY
+G0PytvNswYgGhM25/k0VkS8CAwEAAaOCATswggE3MAkGA1UdEwQCMAAwHQYDVR0O
+BBYEFJd3YjKKuWoKNB4tKwLVdV+dbHkWMIHVBgNVHSMEgc0wgcqAFE5ZeqQemSmf
+31X+xN3+WaO/2umLoYGmpIGjMIGgMQswCQYDVQQGEwJDTjERMA8GA1UECAwIWmhl
+amlhbmcxETAPBgNVBAcMCEhhbmdaaG91MRMwEQYDVQQKDApvcHNiYXNlLmNuMRww
+GgYDVQQLDBNPcmdhbml6YXRpb25hbCBVbml0MRQwEgYDVQQDDAtFYXN5LVJTQSBD
+QTEiMCAGCSqGSIb3DQEJARYTYWRtaW5AYXR0YWNrZXIuY2x1YoIJAK7JOfbBfW4L
+MBMGA1UdJQQMMAoGCCsGAQUFBwMBMAsGA1UdDwQEAwIFoDARBgNVHREECjAIggZz
+ZXJ2ZXIwDQYJKoZIhvcNAQELBQADggEBALTAHzZHYYd19Hm8U7uQCzvYYCRQXIwh
+tU5+juC9SIZX3NLIQjAjdOcv9NUIwiTrdwEcYAHXbxBfX7yos3xVSA/4h6CuLYye
+WPzIMXDMxLcu1W9Y9qtyoxvSqwyztHGH0mKbD8CUPYma/9QebEVheYTlR6SDJV2m
+64yFwKa9RB1qT3UESADfQ2DCZl1KOhXYPXpdELNSSRY5Uo0zxqNrh68FBNshAWYZ
+c+KfLOquJ0epSeKHhdM/iUdpq7KE+Y3kVKLCAJWRRUw687NfrYo+vE4e93r/ryFN
+U2Hmy5AsArk3y76VxNwhnMenP7t7XVaEp3XzuqJ1IYIGF905lkTLJ3U=
+-----END CERTIFICATE-----
