@@ -1,7 +1,6 @@
-
 #!/bin/sh
 ###########################################################
-# checkpsw.sh (C) 2004 Mathias Sundman 
+# checkpsw.sh (C) 2004 Mathias Sundman <mathias@openvpn.se>
 #
 # This script will authenticate OpenVPN users against
 # a plain text file. The passfile should simply contain
@@ -9,10 +8,11 @@
 # one or more space(s) or tab(s) and then the password.
 
 PASSFILE="/etc/openvpn/psw-file"
-LOG_FILE="/etc/openvpn/openvpn-password.log"
+LOG_FILE="/var/log/openvpn-password.log"
 TIME_STAMP=`date "+%Y-%m-%d %T"`
 
 ###########################################################
+
 if [ ! -r "${PASSFILE}" ]; then
   echo "${TIME_STAMP}: Could not open password file \"${PASSFILE}\" for reading." >> ${LOG_FILE}
   exit 1
