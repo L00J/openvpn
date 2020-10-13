@@ -6,7 +6,7 @@ openvpn install
 
 ```txt
 ca.crt 根证书到期时间:  99年
-server.crt  服务器证书到期时间:  10年
+server.crt  服务器签约证书到期时间:  99年
 ```
 
 ## 手动生成证书
