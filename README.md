@@ -5,13 +5,13 @@ openvpn install
 ## 证书
 
 ```txt
-ca.crt 根证书到期时间:99年
-server.crt  服务器证书到期时间:10年
+ca.crt 根证书到期时间:  99年
+server.crt  服务器证书到期时间:  10年
 ```
 
+## 手动生成证书
 
-
-```
+```bash
 cd /etc/openvpn
 git clone https://github.com/OpenVPN/easy-rsa.git
 cd easy-rsa/easyrsa3
