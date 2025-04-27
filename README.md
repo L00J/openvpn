@@ -1,3 +1,11 @@
+<!--
+ * @Author: Logan.Li
+ * @Gitee: https://gitee.com/attacker
+ * @email: admin@attacker.club
+ * @Date: 2025-04-27 12:15:39
+ * @LastEditTime: 2025-04-27 12:16:41
+ * @Description: 
+-->
 # openvpn
 
 openvpn install
@@ -49,3 +57,44 @@ rm pki/ -rf # 清理历史pki目录
 ./easyrsa gen-dh # 创建Diffie-Hellman
 ```
 
+## 生成客户端证书（可设置99年有效期）
+
+> 默认证书有效期为825天，如需99年（36135天），可加参数 `--days=36135`
+
+### 1. 切换到 easy-rsa 目录
+```bash
+cd /etc/openvpn/easy-rsa/easyrsa3
+```
+
+### 2. 生成客户端私钥和请求（以 client 为例，99年有效期）
+```bash
+./easyrsa --days=36135 gen-req client nopass
+```
+- 生成私钥：`pki/private/client.key`
+- 生成请求：`pki/reqs/client.req`
+
+### 3. 用CA签发客户端证书（99年有效期）
+```bash
+./easyrsa --days=36135 sign client client
+```
+- 证书路径：`pki/issued/client.crt`
+- 输入 `yes` 确认签发
+
+### 4. 拷贝客户端所需文件
+- `pki/ca.crt`                # CA根证书
+- `pki/issued/client.crt`     # 客户端证书
+- `pki/private/client.key`    # 客户端私钥
+
+### 5. .ovpn 配置片段
+```conf
+client
+dev tun
+proto udp
+remote <服务器公网IP> 1194
+ca ca.crt
+cert client.crt
+key client.key
+...
+```
+
+> 多个客户端证书只需更换 client 为不同名称重复上述步骤。
